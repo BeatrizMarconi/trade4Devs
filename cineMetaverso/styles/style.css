@@ -1,8 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
+
+html, body, ul{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
 .container-main{
     background-color: #000;
     display: flex;
-    justify-content: center;
     height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+.logo{
+    margin: 5px 40px 5px 15px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.menu-header {
+    width: 40%;
+}
+
+.menu-header nav{
+    height: 100%;
+}
+.menu-header nav ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu-header nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    list-style: none;
+}
+
+.menu-header nav ul li a{
+    position: relative;
+    padding: 3px 0;
+}
+
+.menu-header nav ul li a:after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #fb0066;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.25s ease-in-out 0s;
+}
+
+.menu-header nav ul li a:hover:after{
     width: 100%;
 }
 
+.link-contato{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.link-contato div{
+    width: 100px;
+    height: 40px;
+    background-color: #fb0066;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-contato div a{
+    font-size: 20px;
+}
+
+section{
+    height: 1000px;
+}
