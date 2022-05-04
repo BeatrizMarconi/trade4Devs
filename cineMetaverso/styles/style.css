@@ -69,7 +69,7 @@ html, body, ul{
     align-items: center;
 }
 
-.link-contato div{
+.link-contato a{
     width: 100px;
     height: 40px;
     background-color: #fb0066;
@@ -78,15 +78,16 @@ html, body, ul{
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    font-size: 20px;
+}
+
+.link-contato a:hover{
+    background-color: #bd004b;
 }
 
 a{
     text-decoration: none;
     color: #fff;
-}
-
-.link-contato div a{
-    font-size: 20px;
 }
 
 section{
