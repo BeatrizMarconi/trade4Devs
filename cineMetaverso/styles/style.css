@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
 
 
-html, body, ul{
+html, body, ul, section{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-main{
@@ -12,7 +12,7 @@ html, body, ul{
     display: flex;
     height: 80px;
     width: 100%;
-    position: fixed;
+    position: sticky;
 }
 
 .logo{
@@ -90,6 +90,9 @@ a{
     color: #fff;
 }
 
-section{
-    height: 1000px;
+#banner{
+    background: url("../img/banner.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 500px;
 }
+
