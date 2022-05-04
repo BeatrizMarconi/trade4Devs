@@ -12,7 +12,7 @@ html, body, ul, section, p{
     display: flex;
     height: 80px;
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
 }
 
 .logo{
@@ -93,7 +93,8 @@ a{
 #banner{
     background: url("../img/banner.jpg") no-repeat center center/cover;
     width: 100%;
-    height: 500px;
+    height: 580px;
+    padding-top: 80px;
 }
 
 #banner div{
@@ -108,14 +109,22 @@ a{
 }
 
 #explanation{
-    background-color: #fff;
+    background: url("../img/background.webp") no-repeat center center/cover;
     width: 100%;
-    height: 500px;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #fff;
 }
 
 #explanation div{
-    background: url("../img/background.webp") no-repeat center center/cover;
-    height: 100%;
-    margin-top: 5px;
+    width: 50%;
+
+}
+
+#explanation div p{
+    color: #fff;
+    font-size: 30px;
 }
 
