@@ -254,7 +254,7 @@ a{
     height: 250px;
     border-radius: 5px;
     cursor: pointer;
-    border: 3px solid transparent;
+    border: 6px dotted transparent;
     transition: all 0.20s ease-in-out 0s;
 }
 
