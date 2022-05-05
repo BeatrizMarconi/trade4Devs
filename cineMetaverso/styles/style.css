@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
 
 
-html, body, h1, h2, h3, h4, h5, h6, ul, section, p{
+html, body, h1, h2, h3, h4, h5, h6, ul, section, p, figure, figcaption{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -102,7 +102,7 @@ a{
     height: 30%;
 }
 
-#banner div p{
+#banner div h1{
     color: #fff;
     font-size: 40px;
     padding: 50px;
@@ -122,22 +122,34 @@ a{
     width: 50%;
 }
 
-#explanation div p{
+#explanation div article{
     color: #fff;
     font-size: 30px;
 }
 
 #watch{
-    height: 500px;
-    background-color: #23235D;
+    height: 400px;
+    background-color: #462896;
+    border-top: 3px solid #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#watch h2{
+    color: #fff;
+    padding: 30px 0;
+    font-size: 30px;
 }
 
 .demonstration{
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    width: 80%;
 }
 
-.demonstration div{
+.demonstration figure{
     width: 200px;
     height: 200px;
     background-color: #fff;
@@ -146,13 +158,21 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 5px 10px -3px rgb(14, 13, 26), 0 3px 16px 2px rgba(7, 48, 114, 0.705), 0 8px 12px 1px rgba(34, 0, 51, 0.616);
+    cursor: pointer;
+}
+.demonstration figure:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s linear;
 }
 
-.demonstration div img{
+.demonstration figure img{
     width: 80%;
 }
 
-.demonstration div p{
+.demonstration figure figcaption{
     color: #000;
+    margin-top: 15px;
+    font-size: 20px;
 }
 
