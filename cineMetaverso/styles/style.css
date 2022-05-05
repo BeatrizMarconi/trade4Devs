@@ -290,7 +290,7 @@ a{
 #contact{
     height: 400px;
     display: flex;
-    background-color: rgb(14, 13, 13);
+    background-color: #1F2041;
     justify-content: space-between;
     padding: 0 80px;
     border: 2px solid #fff;
@@ -338,7 +338,7 @@ a{
 }
 
 #contact form button{
-    width: 60%;
+    width: 20%;
     height: 35px;
     background-color: #fb0066;
     color: #fff;
@@ -358,3 +358,25 @@ a{
     background-color: #bd004b;
 }
 
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+footer div{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+footer div p{
+    color: #fff;
+    
+}
+
+footer div img{
+    height: 60px;
+}
