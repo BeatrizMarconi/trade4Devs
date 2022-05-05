@@ -185,7 +185,7 @@ a{
     width: 100%;
 }
 
-#differential div{
+#differential div:first-child{
     width: 80%;
 }
 
@@ -216,4 +216,40 @@ a{
     width: 100%;
     height: 100%;
     border-radius: 2px;
+}
+
+#films{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #040A25;
+    height: 900px;
+}
+
+#films div:first-child{
+    width: 80%;
+    margin: 50px 0;
+}
+
+#films div:first-child h3{
+    color: #fff;
+    font-size: 25px;
+}
+
+#films .films-items{
+    width: 80%;
+}
+
+#films .films-items nav ul{
+    display: grid;
+    grid-template-columns: repeat(5 ,2fr);
+    grid-gap: 30px;
+    list-style: none;
+}
+
+.films-items nav ul li img{
+    width: 185px;
+    height: 250px;
+    border-radius: 5px;
+    cursor: pointer;
 }
