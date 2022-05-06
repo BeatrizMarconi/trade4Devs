@@ -31,6 +31,14 @@ h1, h2, h3, a, article, span, p{
     height: 100%;
 }
 
+#btn-menu{
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
 .menu-header {
     width: 70%;
 }
@@ -256,7 +264,11 @@ a{
     display: grid;
     grid-template-columns: repeat(5 ,2fr);
     grid-gap: 30px;
-    list-style: none;
+    list-style: none; 
+}
+.films-items nav ul li{
+    justify-content: center;
+    display: flex;
 }
 
 .films-items nav ul li img{
@@ -372,7 +384,7 @@ footer{
     background-color: #000;
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 40px 30px;
 }
 
 footer div{
@@ -405,10 +417,8 @@ footer div img{
     }
 
     #films .films-items nav ul{
-        display: grid;
         grid-template-columns: repeat(3 ,4fr);
         grid-gap: 15px;
-        list-style: none;
     }
 
     .container-differential{
@@ -448,5 +458,57 @@ footer div img{
 }    
 
 @media (max-width: 768px){
+    .menu-header, .link-contato a{
+        display: none;
+    }
+
+    .link-contato{
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    #btn-menu{
+        display: block;
+        
+    }
+
+    #explanation div article{
+        font-size: 1.5rem;
+    }
+
+    .demonstration figure{
+        width: 150px;
+        height: 150px;
+    }
     
+    .differential-items{
+        width: 70%;
+        height: 400px;
+    }
+
+    .differential-items figure figcaption{
+        font-size: 1.4rem;
+    }
+
+    #contact{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    #contact div h3{
+        font-size: 2.5rem;
+    }
+
+    #contact div div span{
+        font-size: 1.5rem;
+    }
+    #contact form input{
+        width: 80%;
+        height: 48px;
+    }
+    
+    #films .films-items nav ul{
+        grid-template-columns: repeat(2 ,4fr);
+    }    
 }
