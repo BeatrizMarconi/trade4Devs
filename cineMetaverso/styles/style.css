@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
 
 
-html, body, h1, h2, h3, h4, h5, h6, ul, section, p, figure, figcaption, form, input, button{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     font-family: 'Roboto', sans-serif;
 }
+
+h1, h2, h3, a, article, span, p{
+    color: #fff;
+}
+
 
 .container-main{
     background-color: #000;
@@ -23,7 +32,7 @@ html, body, h1, h2, h3, h4, h5, h6, ul, section, p, figure, figcaption, form, in
 }
 
 .menu-header {
-    width: 40%;
+    width: 70%;
 }
 
 .menu-header nav{
@@ -37,13 +46,14 @@ html, body, h1, h2, h3, h4, h5, h6, ul, section, p, figure, figcaption, form, in
 
 .menu-header nav ul li{
     display: inline-block;
-    margin: 0 10px;
+    margin-right: 10px;
     list-style: none;
 }
 
 .menu-header nav ul li a{
     position: relative;
     padding: 3px 0;
+    font-size: 0.9rem;
 }
 
 .menu-header nav ul li a:after{
@@ -62,7 +72,7 @@ html, body, h1, h2, h3, h4, h5, h6, ul, section, p, figure, figcaption, form, in
 }
 
 .link-contato{
-    width: 40%;
+    width: 10%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -80,6 +90,7 @@ html, body, h1, h2, h3, h4, h5, h6, ul, section, p, figure, figcaption, form, in
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700;
+    padding: 5px;
 }
 
 .link-contato a:hover{
@@ -88,7 +99,6 @@ html, body, h1, h2, h3, h4, h5, h6, ul, section, p, figure, figcaption, form, in
 
 a{
     text-decoration: none;
-    color: #fff;
 }
 
 #banner{
@@ -104,8 +114,7 @@ a{
 }
 
 #banner div h1{
-    color: #fff;
-    font-size: 40px;
+    font-size: 2.3rem;
     padding: 50px;
 }
 
@@ -124,8 +133,7 @@ a{
 }
 
 #explanation div article{
-    color: #fff;
-    font-size: 30px;
+    font-size: 1.9rem;
 }
 
 #watch{
@@ -138,9 +146,8 @@ a{
 }
 
 #watch h2{
-    color: #fff;
     padding: 30px 0;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 .demonstration{
@@ -174,7 +181,7 @@ a{
 .demonstration figure figcaption{
     color: #000;
     margin-top: 15px;
-    font-size: 20px;
+    font-size: 1.2rem;
 
 }
 
@@ -192,7 +199,7 @@ a{
 
 #differential .differential-tittle h2{
     padding: 50px 0;
-    font-size: 30px;
+    font-size: 1.9rem;
     color: #1C1E21;
 }
 
@@ -214,7 +221,7 @@ a{
 
 .differential-items figure figcaption{
     columns: #1C1E21;
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-top: 15px;
 }
 
@@ -229,7 +236,7 @@ a{
     flex-direction: column;
     align-items: center;
     background-color: #03071b;
-    height: 850px;
+    height: auto;
 }
 
 #films div:first-child{
@@ -238,8 +245,7 @@ a{
 }
 
 #films div:first-child h3{
-    color: #fff;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 #films .films-items{
@@ -285,6 +291,7 @@ a{
     letter-spacing: 1px;
     padding: 9px 10px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 #films .btn-films button:hover{
@@ -310,12 +317,10 @@ a{
 }
 
 #contact div h3{
-    color: #fff;
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 #contact div div{
-    color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -323,7 +328,7 @@ a{
 
 #contact div div span{
     padding: 10px 20px;
-    font-size: 30px;
+    font-size: 2rem;
     cursor: pointer;
     transition: transform 0.1s linear;
 }
@@ -348,7 +353,7 @@ a{
     background-color: #fb0066;
     color: #fff;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 0.9rem;
     cursor: pointer;
     font-weight: 700;
     transition: all 0.15s ease;
@@ -366,8 +371,8 @@ a{
 footer{
     background-color: #000;
     display: flex;
-    justify-content: space-around;
-    padding: 60px;
+    justify-content: space-between;
+    padding: 40px;
 }
 
 footer div{
@@ -377,11 +382,71 @@ footer div{
     align-items: center;
 }
 
-footer div p{
-    color: #fff;
-    
-}
-
 footer div img{
     height: 60px;
+}
+
+@media (max-width: 1024px){
+    .logo{
+        margin: 5px 20px 5px 10px;
+    }
+
+    .menu-header nav ul li a{
+        font-size: 13px;
+    }
+
+    .link-contato a{
+        font-size: 13px;
+    }
+
+    #banner div h1{
+        font-size: 1.8rem;
+        padding: 30px;
+    }
+
+    #films .films-items nav ul{
+        display: grid;
+        grid-template-columns: repeat(3 ,4fr);
+        grid-gap: 15px;
+        list-style: none;
+    }
+
+    .container-differential{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+    }
+
+    #differential{
+        height: auto;
+        padding-bottom: 60px;
+    }
+    
+    .differential-tittle h2{
+        text-align: center;
+    }
+
+    .differential-items{
+        margin-bottom: 100px;    
+
+    }
+
+    .differential-items{
+        width: 60%;
+        height: 300px;
+    }
+
+    #contact form button{
+        font-size: 13px;
+        width: 25%;
+    }
+    
+    footer div img{
+        height: 50px;
+    }
+}    
+
+@media (max-width: 768px){
+    
 }
