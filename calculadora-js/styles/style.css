@@ -42,3 +42,7 @@
     border: none;
     color: #fff;
 }
+
+.button:hover{
+    background-color: black
+}
