@@ -163,7 +163,7 @@ a{
 }
 
 #watch{
-    height: 400px;
+    height: auto;
     background-color: #462896;
     border-top: 3px solid #fff;
     display: flex;
@@ -455,7 +455,6 @@ footer div img{
 
     #banner div h1{
         font-size: 1.8rem;
-        padding: 30px;
     }
 
     #films .films-items nav ul{
@@ -477,11 +476,6 @@ footer div img{
     
     .differential-tittle h2{
         text-align: center;
-    }
-
-    .differential-items{
-        margin-bottom: 100px;    
-
     }
 
     .differential-items{
@@ -547,18 +541,36 @@ footer div img{
         margin-right: 20px;
     }
 
+    #explanation div, #banner div{
+        width: 100%;
+    }
+
+    #banner{
+        display: flex;
+        align-items: center;
+    }
+
+    #banner div h1{
+        font-size: 2.5rem;
+    }
+
     #explanation div article{
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .demonstration{
+        flex-direction: column;
+        align-items: center;
     }
 
     .demonstration figure{
         width: 150px;
         height: 150px;
+        margin-bottom: 40px;
     }
-    
-    .differential-items{
-        width: 70%;
-        height: 400px;
+
+    .info-box{
+        font-size: 12px;
     }
 
     .differential-items figure figcaption{
