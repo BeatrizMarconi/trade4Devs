@@ -250,7 +250,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 550px;
+    min-height: 550px;
     width: 100%;
 }
 
@@ -464,7 +464,7 @@ footer div img{
         font-size: 1.8rem;
     }
 
-    #films .films-items nav ul{
+    #films .films-items ul{
         grid-template-columns: repeat(3 ,4fr);
         grid-gap: 15px;
     }
@@ -475,11 +475,6 @@ footer div img{
         width: 85%;
         align-items: center;
     }
-
-    #differential{
-        height: auto;
-        padding-bottom: 60px;
-    }
     
     .differential-tittle h2{
         text-align: center;
@@ -487,12 +482,16 @@ footer div img{
 
     .differential-items{
         width: 60%;
-        height: 300px;
+        height: 350px;
     }
 
     #contact form button{
         font-size: 13px;
         width: 25%;
+    }
+
+    footer div p{
+        font-size: 0.7rem;
     }
 }    
 

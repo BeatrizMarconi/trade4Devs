@@ -8,8 +8,12 @@
 
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS SCROLL     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Cinemetaverso</title>
 </head>
@@ -115,7 +119,7 @@
             </div>
 
             <div class="container-differential">
-                <div class="differential-items">
+                <div class="differential-items" data-aos="zoom-in-right">
                     <figure>
                         <img src="./img/usando oculos vr.jpg" alt="Mulher ultilizando o óculos VR na sala de casa" />
 
@@ -123,7 +127,7 @@
                     </figure>
                 </div>
 
-                <div class="differential-items">
+                <div class="differential-items" data-aos="zoom-out">
                     <figure>
                         <img src="./img/amigos.jpg" alt="Duas pessoas com óculos frente a frente" />
 
@@ -131,7 +135,7 @@
                     </figure>
                 </div>
 
-                <div class="differential-items">
+                <div class="differential-items" data-aos="zoom-in-left">
                     <figure>
                         <img src="./img/metaverso.jpg" alt="Pessoa com óculos VR dentro do metaverso" />
 
@@ -233,6 +237,8 @@
         function msgEnvioForm(){
             alert("Formulário enviado com sucesso!")
         }
+
+        AOS.init();
     </script>
 </body>
 
