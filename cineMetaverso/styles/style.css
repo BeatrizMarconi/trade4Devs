@@ -18,6 +18,9 @@ h1, h2, h3, a, article, span, p{
     color: #fff;
 }
 
+header{
+    height: 80px;
+}
 
 .header-main{
     background-color: #000;
@@ -136,7 +139,6 @@ a{
     background: url("../img/banner.jpg") no-repeat center center/cover;
     width: 100%;
     min-height: 580px;
-    padding-top: 80px;
 }
 
 #banner div{
