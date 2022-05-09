@@ -598,4 +598,16 @@ footer div img{
     #films .films-items ul{
         grid-template-columns: repeat(2 ,4fr);
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80px;
+    }
+    
+    footer div:first-child, footer div:last-child{
+        display: flex;
+        justify-content: center;
+    }
 }
