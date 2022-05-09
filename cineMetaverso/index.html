@@ -76,7 +76,7 @@
                     <div class="info-box">
                         <div class="info">
                             <h4><i class="fa fa-cloud" aria-hidden="true"></i> INTERNET</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Como se trata de um mundo virtual, é preciso uma conexão estável com a internet.
                         </div>
                     </div>
                 </figure>
@@ -89,7 +89,7 @@
                     <div class="info-box">
                         <div class="info">
                             <h4><i class="fa fa-video-camera" aria-hidden="true"></i> ÓCULOS VR</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Essa tecnologia, muito associada a jogos, é uma necessidade para aproveitarmos muito mais do que o Metaverso pode proporcionar.
                         </div>
                     </div>
                 </figure>
@@ -102,7 +102,7 @@
                     <div class="info-box">
                         <div class="info">
                             <h4><i class="fa fa-gamepad" aria-hidden="true"></i> JOYSTICKS</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Um complemento aos óculos de realidade aumentada. É através dos joysticks que ele permite que o jogador interaja com os blocos que aparecem na tela! 
                         </div>
                     </div>
                 </figure>
@@ -207,14 +207,14 @@
                 </div>
             </div>
 
-            <form>
-                <input type="text" placeholder="Nome" />
+            <form onsubmit="msgEnvioForm()">
+                <input type="text" required placeholder="Nome" />
 
-                <input type="email" placeholder="Email" />
+                <input type="email" required placeholder="Email" />
 
-                <input type="text" placeholder="Assunto" />
+                <input type="text" required placeholder="Assunto" />
 
-                <button type="button">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
         </section>
 
@@ -228,6 +228,12 @@
             </div>
         </footer>
     </main>
+
+    <script>
+        function msgEnvioForm(){
+            alert("Formulário enviado com sucesso!")
+        }
+    </script>
 </body>
 
 </html>

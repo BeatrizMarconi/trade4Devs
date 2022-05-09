@@ -425,18 +425,19 @@ a{
 footer{
     background-color: #000;
     display: flex;
-    padding: 40px 30px;
+    padding: 10px 30px;
+    height: 40px;
 }
 
 footer div{
     width: 50%;
-    height: 60px;
     display: flex;
     align-items: center;
 }
 
 footer div img{
-    height: 60px;
+    max-width: 100px;
+    max-height: 100%;
 }
 
 @media (max-width: 1024px){
@@ -491,10 +492,6 @@ footer div img{
     #contact form button{
         font-size: 13px;
         width: 25%;
-    }
-    
-    footer div img{
-        height: 50px;
     }
 }    
 
@@ -588,5 +585,5 @@ footer div img{
     
     #films .films-items ul{
         grid-template-columns: repeat(2 ,4fr);
-    }    
+    }
 }
