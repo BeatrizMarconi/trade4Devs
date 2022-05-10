@@ -201,7 +201,7 @@
             </div>
 
             <div class="btn-films">
-                <button onclick="showMessage("Por enquanto ainda não temos novidades! :(")">Veja mais</button>
+                <button onclick="showMessage('Por enquanto ainda não temos novidades!')">Veja mais</button>
             </div>
         </section>
 
@@ -217,7 +217,7 @@
                 </div>
             </div>
 
-            <form onsubmit=showMessage("Formulário enviado com sucesso")">
+            <form onsubmit="showMessage('Formulário enviado com sucesso')">
                 <input type="text" required placeholder="Nome" />
 
                 <input type="email" required placeholder="Email" />
@@ -240,7 +240,7 @@
     </main>
 
     <script>
-        function showMessage(mgs){
+        function showMessage(msg){
             alert(msg);
         }
 
