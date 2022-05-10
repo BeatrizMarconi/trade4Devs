@@ -201,7 +201,7 @@
             </div>
 
             <div class="btn-films">
-                <button onclick="msgFilms()">Veja mais</button>
+                <button onclick="showMessage()">Veja mais</button>
             </div>
         </section>
 
@@ -217,7 +217,7 @@
                 </div>
             </div>
 
-            <form onsubmit="msgEnvioForm()">
+            <form onsubmit="showMessage(1)">
                 <input type="text" required placeholder="Nome" />
 
                 <input type="email" required placeholder="Email" />
@@ -240,12 +240,13 @@
     </main>
 
     <script>
-        function msgEnvioForm() {
-            alert("Formulário enviado com sucesso!");
-        }
+        function showMessage(btnForm){
 
-        function msgFilms(){
-            alert("Por enquanto ainda não temos novidades! :("); 
+            if(btnForm === 1){    
+                alert("Formulário enviado com sucesso!");
+            }else{    
+                alert("Por enquanto ainda não temos novidades! :("); 
+            }    
         }
 
         AOS.init({duration: 800});
