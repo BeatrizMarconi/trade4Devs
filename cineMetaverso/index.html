@@ -201,7 +201,7 @@
             </div>
 
             <div class="btn-films">
-                <button>Veja mais</button>
+                <button onclick="msgFilms()">Veja mais</button>
             </div>
         </section>
 
@@ -241,7 +241,11 @@
 
     <script>
         function msgEnvioForm() {
-            alert("Formulário enviado com sucesso!")
+            alert("Formulário enviado com sucesso!");
+        }
+
+        function msgFilms(){
+            alert("Por enquanto ainda não temos novidades! :("); 
         }
 
         AOS.init({duration: 800});

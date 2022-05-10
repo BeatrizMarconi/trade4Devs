@@ -197,7 +197,7 @@ a{
 }
 
 .demonstration figure .info-box{
-    transition: all 0s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
     opacity: 0;
     overflow: hidden;
     position: absolute;
