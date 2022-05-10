@@ -139,6 +139,8 @@ a{
     background: url("../img/banner.jpg") no-repeat center center/cover;
     width: 100%;
     min-height: 580px;
+    display: flex;
+    align-items: center;
 }
 
 #banner div{
